@@ -1,0 +1,159 @@
+
+<!--DOCTYPE DECLARATION-->
+<!--All HTML documents must start with a DOCTYPE declaration-->
+<!--Note that a declaration is not an HTML tag, but instead an information to the browser what document type/version of HTML to expect-->
+<!--In older documents (HTML4 or XHTML), the declaration is more complicated because a declaration must refer to a DTD(Document Type Definition)-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Since this is an XHTML tutorial, we use XHTML1.0 DTD transitional declaration-->
+<!--For HTML5, use only the DOCTYPE html only-->
+<html>
+
+	<head>
+
+		<title>
+		18th code
+		</title>
+    
+                <style type="text/css">
+
+                    body{
+                        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        padding: 10px;
+                        color: white;
+                        font-weight: bold;
+                        background-image: url(https://photographylife.com/wp-content/uploads/2015/03/20131024-0189-318-Edit.jpg);
+                        fill-opacity: 1;
+                    }
+
+                    .form{
+                        background-image: url(https://static.vecteezy.com/system/resources/previews/001/872/837/non_2x/abstract-dark-blue-geometric-polygonal-form-background-vector.jpg);
+                        background-position-x:left;
+                        width: fit-content;
+                        padding: 20px;
+                        border: 3px solid black;
+                        position:absolute;
+                        top:150px;
+                        left:350px;
+                        opacity: 0.9;
+                    }
+                    .form input{
+                        margin: 5px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        background-color: ghostwhite;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }
+
+                    .content{
+                        color: whitesmoke;
+                        position: absolute;
+                        top:650px;
+                        left:350px;
+                        width: 230px;
+                        font-size: medium;
+                        text-align: center;
+                        background-color: black;
+                        opacity: 0.8;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color:dodgerblue;
+                        font-size: small;
+                        font-style: italic;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+                    }
+
+                    a:hover{
+                        text-decoration: none;
+                        color: aqua;
+                        font-size: small;
+                    }
+
+                    .contentbox{
+                        font-weight: bolder;
+                        padding: 20px;
+                    }
+
+                </style>
+
+	</head>
+
+	<body>
+
+        <!--FORM CREATION IN HTML-->
+        <!--<input> tag enables you to have a f0rm element, whether for text, password, or even submit button-->
+        <!--you may change a type of form by using the 'type' attribute; there are many types to choose from: text, submit, checkbox, radio, password, etc. -->
+        <!--name attribute specifies the name of an html element, which can be used t0 reference an element in JavaScript (JS)-->
+        <!--placeholder attribute specifies a short hint that describes the expected value of an input field-->
+        <!--value attribute specifies the initial value of an element, and by default it is blank-->
+        <!--<select> tag allows you to put a dropdown list in your forms-->
+        <!--<textarea> tag allows you to put a textarea option, basically reserved for comments-->
+
+        <div class="form">
+            <form>
+                Domain: 
+                <br/>
+                <select name="domain" value="-">
+                    <option disabled selected value style="display: none;">--select an option--</option>
+                    <option value="EU">EU</option>
+                    <option value="US">US</option>
+                    <option value="SEA">SEA</option>
+                    <option value="OCE">OCE</option>
+                </select>
+                <br/><br/>
+                Name: 
+                <br/>
+                <input type="text" name="username" placeholder="Enter your name" value="" required/>
+                <br/>
+                Surname: 
+                <br/>
+                <input type="text" name="lastname" placeholder="Enter your surname" value="" required/>
+                <br/>
+                ID Number: 
+                <br/>
+                <input type="text" name="address" placeholder="Enter your ID" value="" required/>
+                <br/>
+                Gender:
+                <br/>
+                <input type="radio" name="sex" value="male"/> Male
+                <br/>
+                <input type="radio" name="sex" value="female"/> Female
+                <br/><br/>
+                Password: 
+                <br/>
+                <input type="password" name="password" maxlength="10" value=""/>
+                <br/>
+                <input type="checkbox" name="terms" value="" required> I agree to TOCs
+                <br/>
+                <input type="submit" name="submit" value="Send"/>
+            </form>
+        </div>
+
+        <div class ="content">
+            <div class="contentbox">
+                    To know more about creating and forms inputs, see below link:
+                <br/><br/>
+                <a href="https://www.bing.com/ck/a?!&&p=1aa6405acf05d03cJmltdHM9MTcyMjY0MzIwMCZpZ3VpZD0xZWM4NTMyNi01NjdkLTZhYTctMWVhZC00N2U5NTdlMDZiOGQmaW5zaWQ9NTQ2OQ&ptn=3&ver=2&hsh=3&fclid=1ec85326-567d-6aa7-1ead-47e957e06b8d&psq=css+form+w3schools&u=a1aHR0cHM6Ly93d3cudzNzY2hvb2xzLmNvbS9jc3MvY3NzX2Zvcm0uYXNw&ntb=1" target="_blank">
+                    CSS Form - W3Schools
+                </a>
+                <br/>
+                <a href="https://www.w3schools.com/tags/att_name.asp" target="_blank">
+                    HTML name attribute - W3Schools
+                </a>
+                <br/>
+                <a href="https://www.w3schools.com/tags/tag_input.asp" target="_blank">
+                    HTML input tag- W3Schools
+                </a>
+                <br/>
+                <a href="hhttps://www.w3schools.com/Css/css_dropdowns.asp" target="_blank">
+                    CSS Dropdowns- W3Schools
+                </a>
+            </div>
+        </div>
+
+	</body>
+
+</html>
